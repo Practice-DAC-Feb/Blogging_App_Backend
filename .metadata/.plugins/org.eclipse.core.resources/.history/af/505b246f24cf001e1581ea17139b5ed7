@@ -1,0 +1,7 @@
+package com.codewithravi.blog.services;
+
+public interface UserService {
+
+		UserDto createUser(UserDto user);
+}
+ 

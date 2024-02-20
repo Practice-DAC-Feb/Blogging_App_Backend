@@ -1,0 +1,5 @@
+package com.codewithravi.blog.controllers;
+
+public class UserController {
+
+}

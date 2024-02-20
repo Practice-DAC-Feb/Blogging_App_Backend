@@ -1,0 +1,3 @@
+INDEX VERSION 1.131
+C:\Users\HP\Desktop\Bloggers Project\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2382263515.index
+\web_maven_hibernate\src\main\java
