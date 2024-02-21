@@ -1,7 +1,1 @@
 INDEX VERSION 1.4+C:\Users\HP\Desktop\Bloggers Project\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2084807723.index
-3022329652.index
-240026722.index
-2645764006.index
-3899249341.index
-4258870346.index
