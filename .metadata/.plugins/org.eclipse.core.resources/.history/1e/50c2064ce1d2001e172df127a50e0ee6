@@ -1,0 +1,6 @@
+package com.codewithravi.blog.payloads;
+
+public class CategoryDto {
+	
+	
+}

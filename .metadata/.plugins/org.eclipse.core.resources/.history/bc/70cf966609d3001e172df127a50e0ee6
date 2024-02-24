@@ -1,0 +1,12 @@
+package com.codewithravi.blog.controllers;
+
+import org.springframework.web.bind.annotation.RestControllerAdvice;
+
+@RestController
+public class CategoryController {
+
+	
+	
+	
+	
+}
