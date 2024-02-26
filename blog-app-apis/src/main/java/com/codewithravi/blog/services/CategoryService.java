@@ -2,9 +2,8 @@ package com.codewithravi.blog.services;
 
 
 import java.util.List;
-
-import com.codewithravi.blog.entities.Category;
 import com.codewithravi.blog.payloads.CategoryDto;
+
 
 public interface CategoryService {
 

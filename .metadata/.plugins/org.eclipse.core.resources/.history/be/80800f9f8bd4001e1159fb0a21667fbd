@@ -1,0 +1,27 @@
+package com.codewithravi.blog.services;
+
+import java.util.List;
+
+import com.codewithravi.blog.entities.Post;
+import com.codewithravi.blog.payloads.PostDto;
+
+public interface PostService {
+
+	//create
+	Post createPost(PostDto postDto);
+	
+	//update
+	Post updatePost(PostDto postDto, Integer postId);
+	
+	//Delete
+	void deletePost(Integer postId);
+	
+	//Get all post
+	List<Post>getAllPost();
+	
+	//Get single Post
+	Post getPostById(Integer postId);
+	
+	
+	
+}

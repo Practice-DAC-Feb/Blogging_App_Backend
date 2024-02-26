@@ -1,12 +1,10 @@
 package com.codewithravi.blog.services.impl;
 
 import java.util.List;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.context.config.ConfigDataResourceNotFoundException;
 import org.springframework.stereotype.Service;
 
 import com.codewithravi.blog.entities.User;
@@ -14,8 +12,6 @@ import com.codewithravi.blog.exceptions.ResourceNotFoundException;
 import com.codewithravi.blog.payloads.UserDto;
 import com.codewithravi.blog.repositories.UserRepo;
 import com.codewithravi.blog.services.UserService;
-
-import lombok.AllArgsConstructor;
 
 @Service
 public class UserServiceImpl implements UserService {
