@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.codewithravi.blog.payloads.ApiResponse;
 import com.codewithravi.blog.payloads.PostDto;
+import com.codewithravi.blog.payloads.PostResponse;
 import com.codewithravi.blog.services.PostService;
 
 @RestController
@@ -61,13 +62,13 @@ public class PostController {
 //--------------------------------------------------------------------------------------------------------------------
 	//Get All posts
 	@GetMapping("/posts")
-	public ResponseEntity <List<PostDto>> getAllPost(
+	public ResponseEntity <PostResponse> getAllPost(
 			@RequestParam(value="pageNumber",defaultValue="0",required=false)Integer pageNumber,
 			@RequestParam(value="pageSize",defaultValue="3",required=false)Integer pageSize
 			)
 	{
-		 List<PostDto> allPost= this.postService.getAllPost(pageNumber,pageSize);
-		return new ResponseEntity<List<PostDto>>(allPost,HttpStatus.OK);
+		 PostResponse postResponse= this.postService.getAllPost(pageNumber,pageSize);
+		return new ResponseEntity<PostResponse>(postResponse,HttpStatus.OK);
 	}
 //----------------------------------------------------------------------------------------------------------------------
 	//Get Post by ID
