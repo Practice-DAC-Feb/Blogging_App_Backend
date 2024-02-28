@@ -2,7 +2,6 @@ package com.codewithravi.blog.services;
 
 import java.util.List;
 
-import com.codewithravi.blog.entities.Post;
 import com.codewithravi.blog.payloads.PostDto;
 import com.codewithravi.blog.payloads.PostResponse;
 
@@ -27,7 +26,7 @@ public interface PostService {
 	List<PostDto> getAllPostByUser(Integer userId);
 	
 	//Search posts
-	List<Post>searchPosts(String keyword);
+	List<PostDto>searchPosts(String keyword);
 
 	
 	//Get all post
