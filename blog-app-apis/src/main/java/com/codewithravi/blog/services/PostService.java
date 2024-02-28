@@ -31,5 +31,5 @@ public interface PostService {
 
 	
 	//Get all post
-	PostResponse getAllPost(Integer pageNumber, Integer pageSize);
+	PostResponse getAllPost(Integer pageNumber, Integer pageSize, String sortBy,String sortDir);
 }	
