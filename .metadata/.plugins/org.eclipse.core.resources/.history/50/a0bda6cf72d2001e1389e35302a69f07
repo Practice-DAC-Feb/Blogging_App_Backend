@@ -1,6 +1,0 @@
-package com.codewithravi.blog.exceptions;
-
-public class MethodArgumentNotValidException extends RuntimeException{
-
-	String resourceName;
-}
