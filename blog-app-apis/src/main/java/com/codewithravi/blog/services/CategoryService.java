@@ -14,7 +14,6 @@ public interface CategoryService {
 	//Update     
 	CategoryDto updateCategory(CategoryDto categoryDto, Integer categoryId );
 	
-	
 	//delete
 	 void deleteCategory(Integer categoryId);
 	
@@ -23,6 +22,5 @@ public interface CategoryService {
 	
 	//get All
 	List<CategoryDto> getCategories();
-	
 	
 }

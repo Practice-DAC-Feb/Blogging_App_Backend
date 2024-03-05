@@ -22,6 +22,7 @@ public class CategoryServiceImpl implements CategoryService {
 	@Autowired
 	private ModelMapper modelMapper;
 	
+//-------------------------------------------------------------------------------------------------------------------------------	
 	@Override
 	public CategoryDto createCategory(CategoryDto categoryDto) {
 
@@ -30,6 +31,7 @@ public class CategoryServiceImpl implements CategoryService {
 		return this.modelMapper.map(addedCat, CategoryDto.class);
 	}
 
+//-------------------------------------------------------------------------------------------------------------------------------	
 	@Override
 	public CategoryDto updateCategory(CategoryDto categoryDto, Integer categoryId) {
 
@@ -44,6 +46,7 @@ public class CategoryServiceImpl implements CategoryService {
 		return this.modelMapper.map(updatedCat, CategoryDto.class );
 	}
 
+//-------------------------------------------------------------------------------------------------------------------------------	
 	@Override
 	public void deleteCategory(Integer categoryId) {
 
@@ -55,6 +58,7 @@ public class CategoryServiceImpl implements CategoryService {
 				this.categoryRepo.delete(cat);
 	}
 
+//-------------------------------------------------------------------------------------------------------------------------------	
 	@Override
 	public CategoryDto getCategory(Integer categoryId) {
 	
@@ -65,6 +69,7 @@ public class CategoryServiceImpl implements CategoryService {
 		return this.modelMapper.map(cat, CategoryDto.class);
 	}
 
+//-------------------------------------------------------------------------------------------------------------------------------	
 	@Override
 	public List<CategoryDto> getCategories() {
 
@@ -73,8 +78,6 @@ public class CategoryServiceImpl implements CategoryService {
 		.map((cat)->this.modelMapper.map(cat, CategoryDto.class))
 		.collect(Collectors.toList());
 		
-		
 		return catDtos;
 	}
-
 }

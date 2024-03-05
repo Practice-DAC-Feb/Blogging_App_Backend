@@ -29,7 +29,7 @@ public class UserController {
 	@Autowired
 	private UserService userService;
 	
-	
+//-------------------------------------------------------------------------------------------------------------------------------	
 	//POST- create user
 	
 	@PostMapping("/")
@@ -39,7 +39,7 @@ public class UserController {
 		return new ResponseEntity<>(createdUserDto,HttpStatus.CREATED);
 	}
 	
-	
+//-------------------------------------------------------------------------------------------------------------------------------	
 	//PUT- update user
 	
 	@PutMapping("/{userId}") //path URI variable{userId}
@@ -48,7 +48,8 @@ public class UserController {
 		UserDto updatedUser = this.userService.updateUser(userDto, uid);
 		return ResponseEntity.ok(updatedUser);
 	}
-	
+
+//-------------------------------------------------------------------------------------------------------------------------------	
 	//DELETE- delete user
 	
 	@DeleteMapping("/{userId}")
@@ -57,15 +58,16 @@ public class UserController {
 		this.userService.deleteUser(uid);
 		return new ResponseEntity<ApiResponse>(new ApiResponse("User deleted Successfully",true),HttpStatus.OK);
 	}
-	
-	
+
+//-------------------------------------------------------------------------------------------------------------------------------	
 	//GET- user getAll
 	@GetMapping("/")
 	public ResponseEntity<List<UserDto>> getAllUsers()
 	{
 		return ResponseEntity.ok(this.userService.getAllUsers());
 	}
-	
+
+//-------------------------------------------------------------------------------------------------------------------------------	
 	//GET- user get Single User
 	@GetMapping("/{userId}")
 	public ResponseEntity<UserDto> getSingleUser(@PathVariable Integer userId)

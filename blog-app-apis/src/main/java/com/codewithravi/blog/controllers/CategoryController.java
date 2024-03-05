@@ -26,7 +26,8 @@ public class CategoryController {
 
 	@Autowired
 	private CategoryService categoryService;
-	
+
+//-------------------------------------------------------------------------------------------------------------------------------	
 	//create
 	@PostMapping("/")
 	public ResponseEntity<CategoryDto> createCategory(@Valid @RequestBody CategoryDto categoryDto)
@@ -35,7 +36,8 @@ public class CategoryController {
 		return new ResponseEntity<>(createCategoryDto,HttpStatus.CREATED);
 				
 	}
-	
+
+//-------------------------------------------------------------------------------------------------------------------------------		
 	//update
 	@PutMapping("/{catId}")
 	public ResponseEntity<CategoryDto> updateCategory(@Valid @RequestBody CategoryDto categoryDto,@PathVariable Integer catId)
@@ -44,6 +46,7 @@ public class CategoryController {
 		return new ResponseEntity<CategoryDto>(updatedCategory,HttpStatus.OK);
 	}
 	
+//-------------------------------------------------------------------------------------------------------------------------------	
 	//delete
 	@DeleteMapping("/{catId}")
 	public ResponseEntity<ApiResponse> deleteCategory(@PathVariable Integer catId)
@@ -52,6 +55,7 @@ public class CategoryController {
 		return new ResponseEntity<ApiResponse>(new ApiResponse("Category is Deleted successfully!!",true),HttpStatus.OK);
 	}
 
+//-------------------------------------------------------------------------------------------------------------------------------	
 	//get
 	@GetMapping("/{catId}")
 	public ResponseEntity<CategoryDto> getCategory(@PathVariable Integer catId)
@@ -61,6 +65,7 @@ public class CategoryController {
 		
 	}
 	
+//-------------------------------------------------------------------------------------------------------------------------------	
 	//get all
 	@GetMapping("/")
 	public ResponseEntity<List<CategoryDto>> getCategories()

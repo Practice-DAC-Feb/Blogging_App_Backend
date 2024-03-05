@@ -21,7 +21,8 @@ public class UserServiceImpl implements UserService {
  	
 	@Autowired
 	private ModelMapper modelMapper;
-	
+
+//-------------------------------------------------------------------------------------------------------------------------------	
 	@Override
 	public UserDto createUser(UserDto userDto) {
 
@@ -30,6 +31,7 @@ public class UserServiceImpl implements UserService {
 		return this.userToDto(savedUser);
 	}
 
+//-------------------------------------------------------------------------------------------------------------------------------	
 	@Override
 	public UserDto updateUser(UserDto userDto, Integer userId) {
 	
@@ -48,6 +50,7 @@ public class UserServiceImpl implements UserService {
 		return userDto1;
 	}
 
+//-------------------------------------------------------------------------------------------------------------------------------	
 	@Override
 	public UserDto getUserById(Integer userId) {
 
@@ -58,6 +61,7 @@ public class UserServiceImpl implements UserService {
 		return this.userToDto(user);
 	}
 
+//-------------------------------------------------------------------------------------------------------------------------------	
 	@Override
 	public List<UserDto> getAllUsers() {
 
@@ -70,6 +74,7 @@ public class UserServiceImpl implements UserService {
 		return userDtos;
 	}
 
+//-------------------------------------------------------------------------------------------------------------------------------	
 	@Override
 	public void deleteUser(Integer userId) {
 
@@ -77,6 +82,8 @@ public class UserServiceImpl implements UserService {
 		this.userRepo.delete(user);
 		
 	}
+
+//-------------------------------------------------------------------------------------------------------------------------------	
 	
 	public User dtoToUser(UserDto userDto)
 	{
