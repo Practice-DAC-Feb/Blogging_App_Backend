@@ -154,6 +154,7 @@ public class PostServiceImpl implements PostService {
 //-----------------------------------------------------------------------------------------------------
 
 	@Override
+	@Transactional
 	public List<PostDto> getAllPostByCategory(Integer categoryId) {
 		
 		Category cat= this.categoryRepo

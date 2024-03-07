@@ -7,10 +7,13 @@ import java.util.Set;
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -49,7 +52,14 @@ public class Post {
 	@JoinColumn(name="user_id")
 	private User user;
 	
-	@OneToMany(mappedBy = "post",cascade =CascadeType.ALL)
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "post",cascade =CascadeType.ALL)
 	private Set<Comment> comments = new HashSet<>();
+	
+	@ManyToMany(cascade=CascadeType.ALL,fetch = FetchType.EAGER)
+	@JoinTable(name="user_role",
+	joinColumns = @JoinColumn(name = "user",referencedColumnName="id"),
+	inverseJoinColumns = @JoinColumn(name = "role",referencedColumnName = "id")
+				)
+	private Set<Role> roles = new HashSet<Role>();
 	
 }
