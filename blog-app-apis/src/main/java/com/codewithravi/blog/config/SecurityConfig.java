@@ -18,7 +18,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 	@Autowired
 	private CustomUserDetailService customUserDetailService;
-		
+	
+//---------------------------------------------------------------------------------------------	
 	@Override
 	protected void configure(HttpSecurity http) throws Exception {
 	
@@ -32,10 +33,11 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		
 	}
 
+//---------------------------------------------------------------------------------------------	
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 
-		auth.userDetailsService(this.customUserDetailService).passwordEncoder(null);
+		auth.userDetailsService(this.customUserDetailService).passwordEncoder(passwordEncoder());
 
 	}
 	

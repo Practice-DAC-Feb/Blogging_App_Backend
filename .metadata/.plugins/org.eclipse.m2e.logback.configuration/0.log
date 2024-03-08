@@ -4875,3 +4875,15 @@
 2024-03-07 17:45:16,351 [Worker-61: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
 2024-03-07 17:45:16,357 [Worker-61: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2024-03-07 17:45:16,357 [Worker-61: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-03-07 17:45:16,357 [Worker-61: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\HP\Desktop\Bloggers Project\blog-app-apis\src\test\resources
+2024-03-08 14:35:44,572 [Worker-124: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-03-08 14:35:44,572 [Worker-124: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-03-08 14:35:44,574 [Worker-124: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-03-08 14:35:44,629 [Worker-124: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-03-08 14:35:44,631 [Worker-124: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-03-08 14:35:44,632 [Worker-124: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-03-08 14:35:44,632 [Worker-124: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\HP\Desktop\Bloggers Project\blog-app-apis\src\test\resources
+2024-03-08 16:20:57,198 [Worker-148: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2024-03-08 16:20:57,198 [Worker-148: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2024-03-08 16:20:57,199 [Worker-148: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2024-03-08 16:20:57,221 [Worker-148: Launching blog-app-apis - BlogAppApisApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
