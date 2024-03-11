@@ -102,8 +102,15 @@ public class UserServiceImpl implements UserService {
 		//Encoded the password
 		user.setPassword(this.passwordEncoder.encode(user.getPassword()));
 		
-		//roles
-		Role role= this.roleRepo.findById(AppConstants.NORMAL_USER).get();
+//		//roles		
+//		Role role = this.roleRepo.findById(AppConstants.NORMAL_USER)
+//	            .orElseThrow(() -> new ResourceNotFoundException("Role", "Id", AppConstants.NORMAL_USER));
+	
+		Role role = new Role();
+		role.setId(AppConstants.NORMAL_USER);
+
+		// Save the role to the database
+		role = roleRepo.save(role);
 		   
 		user.getRoles().add(role);
 		

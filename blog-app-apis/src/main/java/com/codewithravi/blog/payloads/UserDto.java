@@ -1,9 +1,14 @@
 package com.codewithravi.blog.payloads;
 
+import java.util.HashSet;
+import java.util.Set;
+
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Size;
+
+import com.codewithravi.blog.entities.Role;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -30,6 +35,9 @@ public class UserDto {
 	
 	@NotEmpty(message="About field should not be empty")
 	private String about;
+	
+	private Set<RoleDto> roles = new HashSet<>();
+
 	
 		
 }
