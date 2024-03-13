@@ -106,11 +106,13 @@ public class UserServiceImpl implements UserService {
 //		Role role = this.roleRepo.findById(AppConstants.NORMAL_USER)
 //	            .orElseThrow(() -> new ResourceNotFoundException("Role", "Id", AppConstants.NORMAL_USER));
 	
-		Role role = new Role();
-		role.setId(AppConstants.NORMAL_USER);
+//		Role role = new Role();
+//		role.setId(AppConstants.NORMAL_USER);
+//		role = roleRepo.save(role);
 
+		
+		Role role = this.roleRepo.findById(AppConstants.NORMAL_USER).get();
 		// Save the role to the database
-		role = roleRepo.save(role);
 		   
 		user.getRoles().add(role);
 		
