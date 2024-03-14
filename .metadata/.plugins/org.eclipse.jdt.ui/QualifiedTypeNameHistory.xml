@@ -1,11 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="javax.servlet.http.HttpServletResponse"/>
-    <fullyQualifiedTypeName name="io.jsonwebtoken.Claims"/>
-    <fullyQualifiedTypeName name="io.jsonwebtoken.SignatureAlgorithm"/>
-    <fullyQualifiedTypeName name="java.util.Date"/>
-    <fullyQualifiedTypeName name="java.util.function.Function"/>
-    <fullyQualifiedTypeName name="java.util.Map"/>
     <fullyQualifiedTypeName name="java.util.HashMap"/>
     <fullyQualifiedTypeName name="org.springframework.web.filter.OncePerRequestFilter"/>
     <fullyQualifiedTypeName name="org.springframework.stereotype.Component"/>
@@ -40,7 +34,6 @@
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="com.codewithravi.blog.repositories.RoleRepo"/>
     <fullyQualifiedTypeName name="com.codewithravi.blog.entities.Role"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="com.codewithravi.blog.payloads.UserDto"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
@@ -60,4 +53,11 @@
     <fullyQualifiedTypeName name="java.util.Collections"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="springfox.documentation.service.Contact"/>
+    <fullyQualifiedTypeName name="springfox.documentation.service.ApiKey"/>
+    <fullyQualifiedTypeName name="java.util.Arrays"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="springfox.documentation.spi.service.contexts.SecurityContext"/>
+    <fullyQualifiedTypeName name="springfox.documentation.service.SecurityReference"/>
+    <fullyQualifiedTypeName name="springfox.documentation.builders.AuthorizationScopeBuilder"/>
+    <fullyQualifiedTypeName name="springfox.documentation.service.AuthorizationScope"/>
 </qualifiedTypeNameHistroy>
